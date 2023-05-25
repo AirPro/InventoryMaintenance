@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InventoryMaintenance
 {
-    internal class InvItem
+    public class InvItem
     {
         public InvItem() { }
 
