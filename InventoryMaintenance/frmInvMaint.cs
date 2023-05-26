@@ -31,7 +31,7 @@ namespace InventoryMaintenance
         {
             lstItems.Items.Clear();
             // Add code here that loads the list box with the items in the list.
-            foreach(InvItem i in invItems) 
+            foreach (InvItem i in invItems)
             {
                 lstItems.Items.Add(i.GetDisplayText("\t"));
             }
@@ -40,14 +40,15 @@ namespace InventoryMaintenance
         private void btnAdd_Click(object sender, EventArgs e)
         {
             // Add code here that creates an instance of the New Item form
-            frmNewItem newNewItem = new ();
+            frmNewItem newNewItem = new();
             InvItem invItem = newNewItem.GetNewItem();
             // and then gets a new item from that form.
-            if(invItem != null) 
+            if (invItem != null)
             {
                 invItems.Add(invItem);
                 InvItemDB.SaveItems(invItems);
-                FillItemListBox();            }
+                FillItemListBox();
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

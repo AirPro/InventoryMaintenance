@@ -28,72 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lstItems = new System.Windows.Forms.ListBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            lstItems = new System.Windows.Forms.ListBox();
+            btnAdd = new System.Windows.Forms.Button();
+            btnDelete = new System.Windows.Forms.Button();
+            btnExit = new System.Windows.Forms.Button();
+            SuspendLayout();
             // 
             // lstItems
             // 
-            this.lstItems.FormattingEnabled = true;
-            this.lstItems.ItemHeight = 15;
-            this.lstItems.Location = new System.Drawing.Point(15, 16);
-            this.lstItems.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.lstItems.Name = "lstItems";
-            this.lstItems.Size = new System.Drawing.Size(306, 154);
-            this.lstItems.TabIndex = 10;
+            lstItems.FormattingEnabled = true;
+            lstItems.ItemHeight = 15;
+            lstItems.Location = new System.Drawing.Point(15, 16);
+            lstItems.Margin = new System.Windows.Forms.Padding(2);
+            lstItems.Name = "lstItems";
+            lstItems.Size = new System.Drawing.Size(306, 154);
+            lstItems.TabIndex = 10;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(350, 17);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(97, 25);
-            this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "Add Item";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            btnAdd.Location = new System.Drawing.Point(350, 17);
+            btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new System.Drawing.Size(97, 25);
+            btnAdd.TabIndex = 1;
+            btnAdd.Text = "Add Item";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(350, 54);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(97, 25);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.Text = "Delete Item";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            btnDelete.Location = new System.Drawing.Point(350, 54);
+            btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new System.Drawing.Size(97, 25);
+            btnDelete.TabIndex = 2;
+            btnDelete.Text = "Delete Item";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(350, 91);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(97, 25);
-            this.btnExit.TabIndex = 3;
-            this.btnExit.Text = "E&xit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            btnExit.Location = new System.Drawing.Point(350, 91);
+            btnExit.Margin = new System.Windows.Forms.Padding(2);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new System.Drawing.Size(97, 25);
+            btnExit.TabIndex = 3;
+            btnExit.Text = "E&xit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // frmInvMaint
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(476, 187);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.lstItems);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "frmInvMaint";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Inventory Maintenance";
-            this.Load += new System.EventHandler(this.frmInvMaint_Load);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            CancelButton = btnExit;
+            ClientSize = new System.Drawing.Size(476, 187);
+            Controls.Add(btnExit);
+            Controls.Add(btnDelete);
+            Controls.Add(btnAdd);
+            Controls.Add(lstItems);
+            Margin = new System.Windows.Forms.Padding(2);
+            Name = "frmInvMaint";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Bob Freid: Inventory Maintenance Application";
+            Load += frmInvMaint_Load;
+            ResumeLayout(false);
         }
 
         #endregion
