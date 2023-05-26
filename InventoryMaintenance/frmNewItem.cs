@@ -6,6 +6,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+/*
+ * A constructor is a special method that is used to initialize objects. 
+ * The advantage of a constructor, is that it is called when an object of a class is created.
+ */
+
 namespace InventoryMaintenance
 {
     public partial class frmNewItem : Form
@@ -15,6 +20,7 @@ namespace InventoryMaintenance
             InitializeComponent();
         }
 
+        //Bob Freid Creates an instaance of the class invItem
         // Add a statement here that declares the inventory item.
         private InvItem invItem = null;
 
@@ -29,7 +35,7 @@ namespace InventoryMaintenance
         {
             if (IsValidData())
             {
-                // Add code here that creates a new item
+                // Bob Freid Add code here that creates a new item
                 // and closes the form.
                 invItem = new()
                 {

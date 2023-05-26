@@ -18,28 +18,35 @@ namespace InventoryMaintenance
         }
 
         // Add a statement here that declares the list of items.
+        // Bob Freid Creates an empty list
         private List<InvItem> invItems = null;
 
+        //Bob Freid Retrieves a data list from the data source
         private void frmInvMaint_Load(object sender, EventArgs e)
         {
             // Add a statement here that gets the list of items.
+            
             invItems = InvItemDB.GetItems();
             FillItemListBox();
         }
 
+        // Bob Freid Loads the list into the form
         private void FillItemListBox()
         {
             lstItems.Items.Clear();
             // Add code here that loads the list box with the items in the list.
+            
             foreach (InvItem i in invItems)
             {
                 lstItems.Items.Add(i.GetDisplayText("\t"));
             }
         }
 
+        // Bob Freid Creates a new datya element to bwe added to the list
         private void btnAdd_Click(object sender, EventArgs e)
         {
             // Add code here that creates an instance of the New Item form
+            
             frmNewItem newNewItem = new();
             InvItem invItem = newNewItem.GetNewItem();
             // and then gets a new item from that form.
@@ -51,6 +58,7 @@ namespace InventoryMaintenance
             }
         }
 
+        // Bob Freid Deletes a data record from the form
         private void btnDelete_Click(object sender, EventArgs e)
         {
             int i = lstItems.SelectedIndex;
@@ -74,6 +82,7 @@ namespace InventoryMaintenance
             }
         }
 
+        // Bob Freid Closes the Form and the Application
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
